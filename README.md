@@ -2,10 +2,10 @@
   <h3 align="center">Calculator</h3>
 
   <p align="center">
-  Simple calculator application work on both desktop, mobile and tablet.
+  Simple calculator application work with desktop, mobile and tablet.
     <br />
     <br />
-    <a href=""><strong>Live demo »</strong></a>
+    <a href="https://calculator-livedemo.vercel.app/" target="_blank"><strong>Live demo »</strong></a>
     <br />
     <br />
   </p>
@@ -33,6 +33,10 @@ yarn dev
 
 ### Tech Stack
 
+#### Build Tool
+
+- [Vite](https://vitejs.dev/)
+
 #### CSS
 
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -40,10 +44,6 @@ yarn dev
 #### JavaScript
 
 - [jQuery](https://jquery.com/)
-
-#### Build Tool
-
-- [Vite](https://vitejs.dev/)
 
 <!-- SCREENSHOT -->
 
