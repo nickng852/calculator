@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body class="disable-dbl-tap-zoom absolute inset-0 overflow-auto bg-gray-200">
+    <div
+      class="calculator flex flex-col items-center justify-center p-6 portrait:h-full landscape:lg:h-full"
+    >
+      <form class="flex justify-center">
+        <input
+          type="text"
+          class="font-quick h-24 w-64 rounded-t-2xl border-b bg-gray-900 px-8 pt-6 pb-6 text-right text-xl text-white shadow outline-none sm:h-24 sm:w-64 sm:text-xl lg:h-28 lg:w-80 lg:text-2xl xl:h-28 xl:w-80 xl:text-2xl 2xl:h-36 2xl:w-96 2xl:text-3xl"
+          readonly="readonly"
+        />
+      </form>
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="font-quick clear-btn h-16 w-32 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-32 sm:text-xl lg:h-20 lg:w-40 lg:text-2xl xl:h-20 xl:w-40 xl:text-2xl 2xl:h-24 2xl:w-48 2xl:text-3xl"
+        >
+          AC
+        </button>
+        <button
+          type="button"
+          class="font-quick backspace-btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+        >
+          <i class="fas fa-backspace fa-sm text-gray-400"></i>
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-yellow-500 text-xl text-white shadow outline-none hover:bg-yellow-400 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-3xl 2xl:h-24 2xl:w-24 2xl:text-4xl"
+          data-val="/"
+        >
+          &divide;
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="7"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="8"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="9"
+        >
+          9
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-yellow-500 text-xl text-white shadow outline-none hover:bg-yellow-400 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-3xl 2xl:h-24 2xl:w-24 2xl:text-4xl"
+          data-val="*"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="4"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="5"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="6"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-yellow-500 text-xl text-white shadow outline-none hover:bg-yellow-400 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-3xl 2xl:h-24 2xl:w-24 2xl:text-4xl"
+          data-val="-"
+        >
+          &minus;
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="1"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="2"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="3"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 border-b bg-yellow-500 text-xl text-white shadow outline-none hover:bg-yellow-400 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-3xl 2xl:h-24 2xl:w-24 2xl:text-4xl"
+          data-val="+"
+        >
+          &plus;
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="font-quick btn h-16 w-32 rounded-bl-2xl bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-32 sm:text-xl lg:h-20 lg:w-40 lg:text-2xl xl:h-20 xl:w-40 xl:text-2xl 2xl:h-24 2xl:w-48 2xl:text-3xl"
+          data-val="0"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          class="font-quick btn h-16 w-16 bg-white text-xl text-gray-800 shadow outline-none hover:bg-gray-100 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-2xl 2xl:h-24 2xl:w-24 2xl:text-3xl"
+          data-val="."
+        >
+          .
+        </button>
+        <button
+          type="button"
+          class="font-quick equal-btn h-16 w-16 rounded-br-2xl bg-yellow-500 text-xl text-white shadow outline-none hover:bg-yellow-400 sm:h-16 sm:w-16 sm:text-xl lg:h-20 lg:w-20 lg:text-2xl xl:h-20 xl:w-20 xl:text-3xl 2xl:h-24 2xl:w-24 2xl:text-4xl"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
