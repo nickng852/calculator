@@ -33,10 +33,6 @@ yarn dev
 
 ### Tech Stack
 
-#### Build Tool
-
-- [Vite](https://vitejs.dev/)
-
 #### CSS
 
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -44,6 +40,14 @@ yarn dev
 #### JavaScript
 
 - [jQuery](https://jquery.com/)
+
+#### Build Tool
+
+- [Vite](https://vitejs.dev/)
+
+#### Hosting
+
+- [Vercel](https://vercel.com/)
 
 <!-- SCREENSHOT -->
 
